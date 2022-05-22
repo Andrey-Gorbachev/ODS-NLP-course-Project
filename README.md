@@ -1,6 +1,6 @@
 # ODS-NLP-course-Project
 
-The goal of the project is to implement ASR, based on the SprechBrain framework, for Russian speech recognition.
+The goal of the project is to implement ASR for Russian speech recognition.
 
 Automatic speech recognition, or ASR, is the use of machine learning or artificial intelligence (AI) technology to process human speech into readable text.
 
@@ -15,9 +15,11 @@ Russian Speech Datasets are provided by Microsoft Corporation with CC BY-NC lice
 
 buriy-audiobooks-2-val was chosen as the main dataset, which contains 7,850 ãtterances, 4.9 Hours of total recording time, 1 Gb of volume and 99\% accuracy with manual annotation.
 
+Russian LibriSpeech (RuLS) https://www.openslr.org/96/
 
+Achieved WER% 2.07e+02 after 12 training epochs of 35-40 minutes each on a Tesla K80x24Gb for SpeechBrain for different speakers.
 
-Achieved WER 2.07e+02 after 12 training epochs of 35-40 minutes each on a Tesla K80x24Gb.
+Achieved WER%: 5.44, ÑER%: 4.29 - for train dataset and WER\% : 115.63,  mean ÑER\%: 74.12 on test dataset - for Keras Transformer based ASR - for single speaker.
 
 Pre-trained models are saved on HuggingFace - 
 https://huggingface.co/AndyGo/speechbrain-asr-crdnn-rnnlm-buriy-audiobooks-2-val
